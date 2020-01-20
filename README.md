@@ -1,4 +1,4 @@
-# code-review-assignment-1-good-code
+# PSU CS510 - Code Review - Assignment 1
 
 Readable solution for Code Review Assignment 1:
 
