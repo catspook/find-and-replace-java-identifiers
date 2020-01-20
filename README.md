@@ -10,10 +10,6 @@ string representation of the value of the corresponding key in the dictionary, s
 no bracketed identifiers in the output string. If an identifier in the input string is missing 
 from the dictionary, just remove it in the output string."
 
-## Installation
-
-Download from http://example.com/FIXME.
-
 ## Usage
 
 sample\_map\_and\_str-tmp.clj contains a pre-made identifier-value map (test-map) and several string 
@@ -22,7 +18,10 @@ templates (str-tmp). A sample string and map are already built into core.clj.
 If Leiningen is installed on your machine, you can run 'lein test' to see how it performs on every 
 test case I could come up with.
 
-    $ java -jar code-review-assignment-1-0.1.0-standalone.jar
+To run, copy and run this command in the cr-a1-readable folder:
+    $ java -jar ./target/uberjar/cr-a1-readable-0.1.0-SNAPSHOT-standalone.jar
+
+Must have Java installed.
 
 ## License
 
