@@ -32,6 +32,17 @@
                               (cstr/join [(str (get id-val-map id)) return-str])
                               id-val-map))))  ;id found and value added to return-str, recurse
 
+
+(def test-strings 
+  [two-seperate-id symbols should-fail id-not-in-map str-id-no-spaces])
+
 (defn -main
   [& args]
-  (println (expand-str-tmp two-seperate-id "" test-map)))
+  ; list comprehension to call test function and print results
+  (doall (for [test-str test-strings] 
+              (println (cstr/join 
+                         (concat "Input: " 
+                                 (concat test-str 
+                                         (concat "\nOutput: " 
+                                                 (concat (expand-str-tmp test-str "" test-map) "\n")))))))))
+
